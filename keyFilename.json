@@ -1,0 +1,12 @@
+const fs = require('fs');
+
+// Assuming process.env.keyFilename contains your JSON data
+const jsonData = process.env.keyFilename;
+
+// Specify the file path
+const filePath = 'path_to_google_cloud_key.json';
+
+// Write the JSON data to the file
+fs.writeFileSync(filePath, jsonData, 'utf-8');
+
+console.log('JSON data has been written to the file');
